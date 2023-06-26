@@ -1,0 +1,11 @@
+{
+  "SongId": 1,
+  "SongDetails": {
+    "ArtistName": "Amy Winehouse",
+    "SongName": "Back in Black",
+    "AlbumName": "Back in Black",
+    "SongLength": "4:15",
+    "SongSizeMb": 8.5
+  },
+  "OccurredAt": "2018-01-01T12:00:00.000Z"
+}

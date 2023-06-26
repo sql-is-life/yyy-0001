@@ -1,0 +1,15 @@
+{
+    "DeviceId": "a4e632d6-a6ae-11ec-86f6-5c80b6f1d1e5",
+    "LocationAllocatedId": "a4e632d6-a6ae-11ec-86f6-5c80b6f1d1e2",
+    "SellingAgent":
+        {
+            "AgentId": "db6f72b2-9ffc-47ef-9939-3a7c99ad0546",
+            "AgentName": "Travelling Salesman"
+        },
+    "DeviceDetails": {
+        "DevicePrice": "700",
+        "DeviceName": "MusicMaker3000",
+        "Id": "a4e632d6-a6ae-11ec-86f6-5c80b6f1d1e5"
+    },
+    "OccurredAt": "12/12/2020 20:20:01.000"
+}

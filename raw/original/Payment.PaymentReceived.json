@@ -1,0 +1,9 @@
+
+{
+    "Payment": {
+      "PaymentId": "87968efc-f185-4357-891f-8b77904b5663",
+      "CustomerId": "a4e632d6-a6ae-11ec-86f6-5c80b6f1d1e0",
+      "PaymentAmount": 10,
+      "OccurredAt": "2018-09-01T12:00:00Z"
+    }
+}
