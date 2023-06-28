@@ -15,6 +15,44 @@ bq --location=US mk -d
 --description "Description of the dataset"
 "project_id:yyy_0001_0_dev"
 ```
+
+- Create BigQuery Table 
+
+```JSON
+[
+  {
+    "name": "ID",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "EventTypeID",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "EventType",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "EntityID",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "JSON",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "lastmodifiedtimestamp",
+    "type": "TIMESTAMP",
+    "mode": "NULLABLE"
+  }
+]
+```
+
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
