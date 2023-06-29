@@ -1,0 +1,91 @@
+ID,EventTypeID,EventType,EntityID,JSON,lastmodifiedtimestamp
+596c1e08-8213-44b6-bb9e-3b5d561f963f,7,Music.SongListened.json,1,"{    
+    ""SongId"": 1,    
+    ""DeviceId"": 55,    
+    ""SongCompletedTime"": 100,    
+    ""OccurredAt"": ""2021-09-01T12:00:00Z""    
+}",2023-06-29 22:13:19
+87326bff-7270-4679-b25e-08551e240ec1,7,Music.SongListened.json,1,"{    
+    ""SongId"": 1,    
+    ""DeviceId"": 55,    
+    ""SongCompletedTime"": 100,    
+    ""OccurredAt"": ""2021-09-01T12:00:00Z""    
+}",2023-06-29 22:13:19
+a4d8e993-e60d-410b-ac20-0b720b2b3af1,8,Logistic.DevicePurchased.json,5,"{
+    ""DeviceId"": ""5"",
+    ""DeviceDetails"": {
+      ""DevicePrice"": ""$500"",
+      ""DeviceTypeName"": ""MusicMaker3000"",
+      ""DeviceTypeId"": ""1"",
+      ""SerialNumber"": ""123567890""
+    },
+    ""OccurredAt"": ""2018-04-05T12:00:00""
+}",2023-06-29 22:13:19
+f8a4475d-e004-49b5-98fe-2769ded45375,8,Logistic.DevicePurchased.json,55,"{
+    ""DeviceId"": ""55"",
+    ""DeviceDetails"": {
+      ""DevicePrice"": ""$600"",
+      ""DeviceTypeName"": ""MusicMaker3000"",
+      ""DeviceTypeId"": ""1"",
+      ""SerialNumber"": ""123567891""
+    },
+    ""OccurredAt"": ""2018-04-05T12:00:00""
+}",2023-06-29 22:13:19
+a0f131e3-687d-4701-b39a-b5135fa42c47,6,Music.SongPublished.json,1,"{
+  ""SongId"": 1,
+  ""SongDetails"": {
+    ""ArtistName"": ""Amy Winehouse"",
+    ""SongName"": ""Back in Black"",
+    ""AlbumName"": ""Back in Black"",
+    ""SongLength"": ""4:15"",
+    ""SongSizeMb"": 8.5
+  },
+  ""OccurredAt"": ""2018-01-01T12:00:00.000Z""
+}",2023-06-29 22:13:19
+aac72634-e3c2-47bc-a6b8-ddba8a171396,5,Music.SongRemoved.json,1,"{
+    ""SongId"": 1,
+    ""OccurredAt"": ""2022-01-01T12:00:00.000Z""
+}",2023-06-29 22:13:19
+7956a8a1-90ac-45f1-a4cc-ac443d0fe560,4,Payment.PaymentReceived.json,2,"{
+    ""Payment"": {
+      ""PaymentId"": 2,
+      ""CustomerId"": 9,
+      ""PaymentAmount"": 10,
+      ""OccurredAt"": ""2018-09-01T12:00:00Z""
+    }
+}",2023-06-29 22:13:19
+65d05a6b-e230-4f08-82bd-2cba66073158,3,Sale.CustomerRegistered.json,9,"{
+    ""CustomerId"": 9,
+    ""LegalAddress"": ""1, Waiyaki Way, Nairobi, Kenya"",
+    ""CustomerName"": ""Benedict Otieno"",
+    ""CustomerPhoneNumber"": ""07956678902"",
+    ""CustomerEmail"": ""me@gmail.com"",
+    ""CustomerIdentityNumber"": ""123456789"",
+    ""CustomerDateOfBirth"": ""12/12/1990"",
+    ""OccurredAt"": ""12/12/2020 20:20:01.000""
+}",2023-06-29 22:13:19
+ef6b1858-1c39-4aaa-8155-d16076d307f0,2,Sale.DeviceAllocated.json,5,"{
+    ""DeviceId"": 5,
+    ""LocationAllocatedId"": 8,
+    ""SellingAgent"":
+        {
+            ""AgentId"": ""db6f72b2-9ffc-47ef-9939-3a7c99ad0546"",
+            ""AgentName"": ""Travelling Salesman""
+        },
+    ""DeviceDetails"": {
+        ""DevicePrice"": ""700"",
+        ""DeviceName"": ""MusicMaker3000"",
+        ""Id"": ""a4e632d6-a6ae-11ec-86f6-5c80b6f1d1e5""
+    },
+    ""OccurredAt"": ""12/12/2020 20:20:01.000""
+}
+",2023-06-29 22:13:19
+d25f9fac-cf69-4f85-839e-0cc5796a4f4a,3,Sale.LocationRegistered.json,8,"{
+    ""LocationId"": 8,
+    ""CustomerId"": 9,
+    ""Latitude"": ""13.1339"",
+    ""Longitude"": ""27.8493"",
+    ""ContactName"": ""John Smith"",
+    ""ContactPhoneNumber"": ""+254123456789"",
+    ""OccurredAt"": ""12/12/2020 20:20:01.000""
+}",2023-06-29 22:13:19

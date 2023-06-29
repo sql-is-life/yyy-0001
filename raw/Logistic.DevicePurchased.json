@@ -1,5 +1,5 @@
-{
-    "DeviceId": "1234",
+[{
+    "DeviceId": "5",
     "DeviceDetails": {
       "DevicePrice": "$500",
       "DeviceTypeName": "MusicMaker3000",
@@ -7,4 +7,15 @@
       "SerialNumber": "123567890"
     },
     "OccurredAt": "2018-04-05T12:00:00"
-  }
+},
+{
+    "DeviceId": "55",
+    "DeviceDetails": {
+      "DevicePrice": "$600",
+      "DeviceTypeName": "MusicMaker3000",
+      "DeviceTypeId": "1",
+      "SerialNumber": "123567891"
+    },
+    "OccurredAt": "2018-04-05T12:00:00"
+}
+]

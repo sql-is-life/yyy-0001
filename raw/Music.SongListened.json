@@ -1,7 +1,14 @@
-
+[
 {    
     "SongId": 1,    
-    "DeviceId": 1,    
+    "DeviceId": 5,    
     "SongCompletedTime": 100,    
     "OccurredAt": "2021-09-01T12:00:00Z"    
-}
+},
+{    
+    "SongId": 1,    
+    "DeviceId": 55,    
+    "SongCompletedTime": 100,    
+    "OccurredAt": "2021-10-01T12:00:00Z"    
+},
+]
