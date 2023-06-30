@@ -66,6 +66,20 @@ bq --location=US mk -d
     "mode": "Required"
   },
 
+-- Create Table
+
+```SQL
+CREATE TABLE yyy_0001_0_dev.v1_eventsourcing(
+    `ID` STRING NOT NULL,
+    `EventTypeID` INT64,
+    `EventType` STRING,
+    `EntityID` INT64,
+    `JSON` JSON,
+    `lastmodifiedtimestamp` TIMESTAMP
+)
+PARTITION BY RANGE_BUCKET(EventTypeID, GENERATE_ARRAY(1, 10000, 1))
+CLUSTER BY lastmodifiedtimestamp
+```
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
