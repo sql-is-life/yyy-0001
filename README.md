@@ -67,6 +67,10 @@ bq --location=US mk -d
   },
 
 
+-- Upload to bigquery
+
+bq load --source_format=CSV --autodetect yyy_0001_0_dev.v1_eventsourcing 
+
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
 - Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers

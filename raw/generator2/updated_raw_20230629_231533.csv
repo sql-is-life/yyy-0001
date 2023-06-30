@@ -1,0 +1,7 @@
+ID,EventTypeID,EventType,EntityID,JSON,lastmodifiedtimestamp
+bd6c966e-6dd1-4928-a140-934001f010ff,7,Music.SongListened.json,1,"{    
+    ""SongId"": 1,    
+    ""DeviceId"": 55,    
+    ""SongCompletedTime"": 100,    
+    ""OccurredAt"": ""2021-09-01T12:00:00Z""    
+}",2023-06-29 22:15:32
