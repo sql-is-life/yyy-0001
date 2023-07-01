@@ -6,7 +6,7 @@ with
             lastmodifiedtimestamp as updated_at,
             json_extract_scalar(json, '$.DeviceId') as deviceid,
             json_value(json, '$.DeviceId') as deviceid2
-        from `{{ ref('v1_eventsourcing') }}`
+        from {{ ref('v1_eventsourcing') }}
         where eventtypeid = 2
     ),
 
