@@ -1,6 +1,13 @@
 
 version: 2
 
+sources:
+  - name: z-terraform-1001-dev
+    database: yyy_0001_0_dev  
+    schema: yyy_0001_0_dev
+    tables: 
+      - name: v1_eventsourcing
+
 models:
     - name: my_first_dbt_model
       description: "A starter dbt model"
