@@ -4,8 +4,8 @@ with
         select
             entityid as _id,
             lastmodifiedtimestamp as updated_at,
-            json_extract_scalar(json, '$.DeviceId') as deviceid,
-            json_value(json, '$.DeviceId') as deviceid2
+            CAST(json_value(json, '$.SongId') as INT64) as SongId,
+            SAFE_CAST(TIMESTAMP(json_value(json, '$.OccurredAt')) as DATETIME) as OccurredAt
         from {{ ref('v2_stg_music_song_removed') }}
     ),
 
@@ -29,4 +29,4 @@ Rollup data using row_number
 Partitioning:
 The data in this model is partitioned on BigQuery using the _PARTITIONTIME pseudo column. The granularity of the partition is one day, meaning that the data is divided into separate partitions for each day. 
 This partitioning strategy optimizes queries that filter by date, as BigQuery only needs to scan the relevant partition(s) instead of the entire table.
-*/
+A */
