@@ -9,18 +9,21 @@ with
             CAST(json_value(json, '$.SongCompletedTime') as INT) as SongCompletedTime,
             SAFE_CAST(TIMESTAMP(json_value(json, '$.OccurredAt')) as DATETIME) as OccurredAt
         from {{ ref('v2_stg_music_song_listened') }}
-    ),
+    )
+ /* 
+
+ Can't Apply CDC Patten As We Don't Have Listened ID
+ - TODO: Look again at HASHING to a INT
+    ,
 
     eventlogs_music_song_listened_rolled_up as (
         select
             *, row_number() over (partition by _id order by updated_at desc) as sequence
         from eventlogs_music_song_listened_json_extracted
     )
-
-select distinct * except (sequence)
-from eventlogs_music_song_listened_rolled_up as s
-where sequence = 1
-
+*/
+select *
+from eventlogs_music_song_listened_json_extracted as s
 
 /*
 This DBT model represents an intermediate view of our dataset.
