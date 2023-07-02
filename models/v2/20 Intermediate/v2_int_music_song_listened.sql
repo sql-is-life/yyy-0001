@@ -4,10 +4,11 @@ with
         select
             entityid as _id,
             lastmodifiedtimestamp as updated_at,
-            json_extract_scalar(json, '$.DeviceId') as deviceid,
-            json_value(json, '$.DeviceId') as deviceid2
+            CAST(json_value(json, '$.SongId') as INT) as SongId,
+            CAST(json_value(json, '$.DeviceId') as INT) as DeviceId,
+            CAST(json_value(json, '$.SongCompletedTime') as INT) as SongCompletedTime,
+            SAFE_CAST(TIMESTAMP(json_value(json, '$.OccurredAt')) as DATETIME) as OccurredAt
         from {{ ref('v2_stg_music_song_listened') }}
-        where eventtypeid = 2
     ),
 
     eventlogs_music_song_listened_rolled_up as (
