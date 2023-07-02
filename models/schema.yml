@@ -1,6 +1,16 @@
 
 version: 2
 
+sources:
+  - name: jukeboxevents
+    database: z-terraform-1001-dev
+    schema: yyy_0001_0_dev
+    tables:
+      - name: v1_eventsourcing
+      - name: v2_raw_music_song_removed
+      - name: v2_raw_music_song_published
+      - name: v2_raw_music_song_listened
+
 models:
     - name: v1_eventsourcing
       description: "A starter dbt model"
